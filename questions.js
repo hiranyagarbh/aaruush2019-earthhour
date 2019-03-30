@@ -134,20 +134,19 @@ var quizObj = [
                         '<input id="a3" type="radio" name="radio' + i + '"/>'+'&nbsp;'+quizObj[rand].choice[2]+'<br />';
                     track[i]=rand;
                     }
-                    // str += '<input value="Submit" type="button" onclick="scoreMe()"><br><br>';
-                    // str += 'Score: <input id="score" type="text" size="8" ><br><br><br>';
+                    str += '<input value="Submit" type="button" onclick="scoreMe()"><br><br>';
+                    str += 'Score: <input id="score" type="text" size="8" ><br><br><br>';
                     document.getElementById('quesRes').innerHTML = str;
-/*
+
                   function scoreMe(){
                     var sum=0;
                     for(var j=0;j<maxQues;j++){
                       for(var k=0;k<3;k++){
                         if(quizObj[track[j]].choice[k].checked===quizObj[track[j]].correct[0]){
-                          console.log('Works'+j);
+                          //console.log('Works'+j);
                           sum++;
                         }
                       }
                     }
                     document.getElementById('score').value = ((sum/maxQues)*100)+'%';
                   }
-*/
